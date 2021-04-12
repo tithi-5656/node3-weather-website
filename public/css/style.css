@@ -1,0 +1,24 @@
+h1{
+    color:gray
+}
+img{
+    width: 250px;
+}
+body{
+    color: #333333;
+    max-width: 650px;
+    
+}
+
+input{
+    padding: 8px;
+    border: 1 solid #888888;
+}
+
+button{
+    padding: 8px;
+    border: 1 solid #888888;
+    cursor: pointer;
+    color: white;
+    background-color: #888888;
+}
