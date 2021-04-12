@@ -4,7 +4,7 @@ const hbs =  require('hbs')
 const forcast =  require('./utility/forcast')
 const geocode =  require('./utility/geocode')
 const app=express()
-
+const port=process.env.PORT || 3000
 console.log(__dirname)
 //console.log(__filename)
 //console.log(path.join(__dirname,"../public"))
@@ -73,8 +73,8 @@ app.get('/weather',(req,res)=>{
 app.get('*',(req,res)=>{ 
     res.send('<h1>Page not found</h1>')
 })
-app.listen(3000,()=>{
-    console.log('server is up on 3000')
+app.listen(port,()=>{
+    console.log('server is up on '+port)
 })
 
 
